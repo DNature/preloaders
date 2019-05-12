@@ -1,0 +1,151 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: #0e3c72;
+}
+
+/* Start circle preloader ========================*/
+
+.circle {
+	margin: 70px auto;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 5px solid #ffffff52;
+	border-top: 5px solid#fff;
+	animation: spin linear infinite 1s;
+}
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* End of circle preloader */
+
+/* Bouncing dots preloaders =====================*/
+.container {
+	width: 40px;
+	margin: 20px auto;
+}
+
+.dot {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: white;
+	border-radius: 50%;
+}
+.dot1 {
+	background: greenyellow;
+	animation: jump 0.6s 0.1s infinite;
+}
+.dot2 {
+	background: yellow;
+	animation: jump 0.6s 0.2s infinite;
+}
+.dot3 {
+	background: rgb(255, 133, 153);
+	animation: jump 0.6s 0.3s infinite;
+}
+
+@keyframes jump {
+	50% {
+		transform: translateY(15px);
+	}
+}
+
+/* Box animation */
+.box {
+	width: 14px;
+	height: 14px;
+	background: #70b3ff;
+	display: inline-block;
+	animation: pulse 0.6s ease-in infinite alternate;
+}
+.box2,
+.box3 {
+	animation-delay: 0.5s;
+}
+
+@keyframes pulse {
+	100% {
+		opacity: 0;
+	}
+}
+
+/* Second box animation */
+
+.item {
+	width: 14px;
+	height: 14px;
+	background: #70b3ff;
+	display: inline-block;
+	animation: rotate 0.6s ease-in infinite alternate;
+}
+.item2,
+.item3 {
+	animation-delay: 1s;
+}
+@keyframes rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* Glow */
+.glow {
+	margin: 40px auto;
+	width: 20px;
+	height: 20px;
+	background: rgb(245, 248, 48);
+	border-radius: 50%;
+	animation: double-boubce 1s infinite alternate;
+}
+@keyframes double-boubce {
+	20% {
+		transform: scale(0.7);
+		opacity: 0.5;
+	}
+	40% {
+		transform: scale(0.9);
+		opacity: 0.6;
+		background: rgb(255, 118, 141);
+	}
+	60% {
+		transform: scale(1.1);
+		opacity: 0.7;
+		background: rgb(118, 189, 255);
+	}
+	80% {
+		transform: scale(1.3);
+		opacity: 0.8;
+		background: rgb(255, 0, 43);
+	}
+	100% {
+		transform: scale(1.5);
+		opacity: 0.9;
+		background: rgb(251, 255, 0);
+	}
+}
+
+/* Glow 2 */
+.glow-2 {
+	margin: 40px auto;
+	width: 20px;
+	height: 20px;
+	background: rgb(48, 241, 248);
+	border-radius: 50%;
+	animation: glow-1 1s infinite alternate;
+}
+@keyframes glow-1 {
+	from {
+		transform: scale(0.7);
+		opacity: 0.2;
+	}
+	to {
+		transform: scale(1.6);
+		opacity: 1;
+	}
+}
