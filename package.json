@@ -1,0 +1,15 @@
+{
+  "name": "git",
+  "version": "1.0.0",
+  "description": "Simple css preloaders",
+  "homepage": "https://dnature.github.io/preloaders",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Divine Nature",
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
