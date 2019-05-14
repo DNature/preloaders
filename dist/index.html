@@ -8,6 +8,9 @@
     <title>CSS Preloaders</title>
 </head>
 <body>
+    <div class="preloader">
+        <div class="glow-2"></div>
+    </div>
     <!-- Circle animation -->
     <div class="circle"></div>
 
@@ -33,7 +36,42 @@
         <div class="box box4"></div>
     </div>
 
+    <div class="container2">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+        <div class="line line4"></div>
+    </div>
+    <div class="image"></div>
+
+    <section class="wrapper">
+        <div class="spinner">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+    </section>
+    
+
     <div class="glow"></div>
-    <div class="glow-2"></div>
+    <div class="glow3"></div>
+
+    <!-- <div class="load">Loading...</div> -->
+
+    <script>
+    window.onload = function(){
+        var preloader = document.getElementsByClassName('preloader')[0];
+        preloader.className += ' fade';
+
+        setTimeout(function(){
+            preloader.style.display = 'none';
+        }, 500);
+    }
+    </script>
 </body>
 </html>
